@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/user" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/inpEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -29,6 +29,7 @@
         android:background="#ffffff"
         android:ems="10"
         android:hint="@string/tEmail"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:padding="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,11 +37,10 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.392"
-        android:importantForAutofill="no" />
+        app:layout_constraintVertical_bias="0.389" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/inpPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -59,7 +59,7 @@
         android:importantForAutofill="no" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonlgn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
