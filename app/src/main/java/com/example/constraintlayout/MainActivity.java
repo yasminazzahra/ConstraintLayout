@@ -28,14 +28,24 @@ public class MainActivity extends AppCompatActivity {
                 nama = edEmail.getText().toString();
                 password = edPassword.getText().toString();
 
-                if(InputData() == true){
+                if(nama.equals("yasminazzahra.ya@gmail.com") && password.equals("achii24")){
                     Toast y = Toast.makeText(getApplicationContext(),
                             "Berhasil, \n Email : "+nama+"\nPassword : "+password,Toast.LENGTH_LONG);
                     y.show();
                 }
+                else if(!nama.equals("yasminazzahra.ya@gmail.com") && password.equals("achii24")){
+                    Toast y = Toast.makeText(getApplicationContext(),
+                            "Login Gagal, Email Salah", Toast.LENGTH_LONG);
+                    y.show();
+                }
+                else if (nama.equals("yasminazzahra.ya@gmail.com") && !password.equals("achii24")){
+                    Toast y = Toast.makeText(getApplicationContext(),
+                            "Login Gagal, Password Salah", Toast.LENGTH_LONG);
+                    y.show();
+                }
                 else{
                     Toast y = Toast.makeText(getApplicationContext(),
-                            "Tidak Berhasil", Toast.LENGTH_LONG);
+                            "Gagal, \n Email Salah dan Password Salah", Toast.LENGTH_LONG);
                     y.show();
                 }
             }
