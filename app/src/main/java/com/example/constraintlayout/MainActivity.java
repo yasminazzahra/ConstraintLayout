@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.baru)
         {
-            Intent intent = new Intent(MainActivity.this, ActivityMenu1.class);
+            Intent intent = new Intent(getApplicationContext(), Home_Activity.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
